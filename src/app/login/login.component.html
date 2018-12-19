@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header text-center">
+      <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+      
+    </div>
+    <div class="modal-body mx-3">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+        </mat-form-field>
+
+    </div>
+    <div class="modal-footer d-flex justify-content-center">
+      <button mat-raised-button (click)="login()" color="primary">Login</button>
+    </div>
+  </div>
+</div>
